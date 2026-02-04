@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Heißer Planet – schrumpfende Rechte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOPBAR -->
+<nav class="topbar">
+    <div class="nav-left">🌍 Heißer Planet</div>
+    <div class="nav-right">
+        <button class="menu-btn" onclick="toggleMenu()">⋮</button>
+        <div id="menu" class="menu hidden">
+            <p class="menu-title">Darstellung</p>
+            <button onclick="setTheme('blue')">🔵 Blau</button>
+            <button onclick="setTheme('green')">🟢 Grün</button>
+            <button onclick="setTheme('red')">🔴 Rot</button>
+            <hr>
+            <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+        </div>
+    </div>
+</nav>
+
+<!-- SECTION NAV -->
+<nav class="section-nav">
+    <button onclick="scrollToSection('klima')">🔥 Klima</button>
+    <button onclick="scrollToSection('wasser')">💧 Wasser</button>
+    <button onclick="scrollToSection('wohnen')">🏠 Wohnen</button>
+    <button onclick="scrollToSection('gesundheit')">❤️ Gesundheit</button>
+    <button onclick="scrollToSection('tun')">✊ Handeln</button>
+    <button onclick="scrollToSection('spiel')">🎮 Spiel</button>
+</nav>
+
+<section class="section hero-card fade-in">
+    <h1>Heißer Planet</h1>
+    <h2>Schrumpfende Rechte</h2>
+    <p class="subtitle">
+        Wie der Klimawandel Menschenrechte bedroht – einfach erklärt für Schüler.
+    </p>
+</section>
+
+
+<!-- KLIMA -->
+<section id="klima" class="section card slide-up">
+    <h2>🔥 Klimawandel & Menschenrechte</h2>
+    <p>
+        Der Klimawandel betrifft nicht nur die Umwelt, sondern auch grundlegende
+        Menschenrechte wie Wasser, Wohnen und Gesundheit.
+    </p>
+</section>
+
+<!-- WASSER -->
+<section id="wasser" class="section card slide-up image-text">
+    <img src="wasser.jpg" alt="Sauberes Trinkwasser">
+    <div>
+        <h2>💧 Recht auf Wasser</h2>
+        <p>
+            Durch Dürre und Hitze fehlt vielen Menschen sauberes Trinkwasser.
+            Wasser ist ein Menschenrecht.
+        </p>
+        <ul>
+            <li>weniger Regen</li>
+            <li>längere Dürren</li>
+            <li>ausgetrocknete Flüsse</li>
+        </ul>
+    </div>
+</section>
+
+<!-- WOHNEN -->
+<section id="wohnen" class="section card slide-up image-text">
+    <img src="überschwimung.jpg" alt="Überschwemmtes Haus">
+    <div>
+        <h2>🏠 Recht auf Wohnen</h2>
+        <p>
+            Überschwemmungen, Stürme und Brände zerstören Häuser.
+            Viele Menschen verlieren dadurch ihr Zuhause.
+        </p>
+    </div>
+</section>
+
+<!-- GESUNDHEIT -->
+<section id="gesundheit" class="section card slide-up image-text">
+    <img src="hitzewellen.jpg" alt="Hitzewelle">
+    <div>
+        <h2>❤️ Recht auf Gesundheit</h2>
+        <p>
+            Hitze, Krankheiten und Luftverschmutzung gefährden die Gesundheit,
+            besonders Kinder und ältere Menschen.
+        </p>
+    </div>
+</section>
+
+<!-- TUN -->
+<section id="tun" class="section card slide-up">
+    <h2>✊ Was kannst du tun?</h2>
+    <ul>
+        <li>🚲 Fahrrad statt Auto</li>
+        <li>💡 Strom & Wasser sparen</li>
+        <li>🥗 Lebensmittel nicht verschwenden</li>
+        <li>🗣️ Andere informieren</li>
+    </ul>
+</section>
+
+<!-- SPIEL -->
+<section id="spiel" class="section center card slide-up">
+    <h2>🎮 Richtig oder Falsch</h2>
+
+    <select id="levelSelect">
+        <option value="leicht">Leicht</option>
+        <option value="mittel">Mittel</option>
+        <option value="schwer">Schwer</option>
+    </select>
+
+    <div class="game-box">
+        <p id="question">Klicke auf „Neue Runde“</p>
+        <p>⏱ Zeit: <span id="timer">10</span></p>
+        <p>⭐ Punkte: <span id="score">0</span></p>
+    </div>
+
+    <div class="button-group">
+        <button onclick="answer(true)">✔ Richtig</button>
+        <button onclick="answer(false)">❌ Falsch</button>
+    </div>
+
+    <button onclick="startGame()">🔁 Neue Runde</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
