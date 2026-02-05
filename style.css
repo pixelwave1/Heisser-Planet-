@@ -158,6 +158,15 @@ select {
     .hero h2 { font-size: 1.4em; }
 }
 
+@media (max-width: 600px) {
+    .section-nav button {
+        padding: 8px 10px;
+        font-size: 14px;
+        margin: 4px;
+    }
+}
+
+
 /* ===== TOP APP BAR ===== */
 .topbar {
     position: sticky;
@@ -262,6 +271,15 @@ select {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
 /* Hero-Karte wie Card mit Hintergrundbild */
 .hero-card {
     background-image: url("Heißer\ Planet.jpg"); /* Pfad zu deinem Bild */
