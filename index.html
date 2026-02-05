@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <title>Heißer Planet – schrumpfende Rechte</title>
@@ -9,126 +10,142 @@
 
 <body>
 
-<!-- TOPBAR -->
-<nav class="topbar">
-    <div class="nav-left">🌍 Heißer Planet</div>
-    <div class="nav-right">
-        <button class="menu-btn" onclick="toggleMenu()">⋮</button>
-        <div id="menu" class="menu hidden">
-            <p class="menu-title">Darstellung</p>
-            <button onclick="setTheme('blue')">🔵 Blau</button>
-            <button onclick="setTheme('green')">🟢 Grün</button>
-            <button onclick="setTheme('red')">🔴 Rot</button>
-            <hr>
-            <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    <!-- TOPBAR -->
+    <nav class="topbar">
+        <div class="nav-left"> Heißer Planet</div>
+        <div class="nav-right">
+            <button class="menu-btn" onclick="toggleMenu()">⋮</button>
+            <div id="menu" class="menu hidden">
+                <p class="menu-title">Darstellung</p>
+                <button onclick="setTheme('blue')">🔵 Blau</button>
+                <button onclick="setTheme('green')">🟢 Grün</button>
+                <button onclick="setTheme('red')">🔴 Rot</button>
+                <hr>
+                <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- SECTION NAV -->
-<nav class="section-nav">
-    <button onclick="scrollToSection('klima')">🔥 Klima</button>
-    <button onclick="scrollToSection('wasser')">💧 Wasser</button>
-    <button onclick="scrollToSection('wohnen')">🏠 Wohnen</button>
-    <button onclick="scrollToSection('gesundheit')">❤️ Gesundheit</button>
-    <button onclick="scrollToSection('tun')">✊ Handeln</button>
-    <button onclick="scrollToSection('spiel')">🎮 Spiel</button>
-</nav>
+    <!-- SECTION NAV -->
+    <nav class="section-nav">
+        <button onclick="scrollToSection('klima')"> Klima</button>
+        <button onclick="scrollToSection('wasser')"> Wasser</button>
+        <button onclick="scrollToSection('wohnen')"> Wohnen</button>
+        <button onclick="scrollToSection('gesundheit')"> Gesundheit</button>
+        <button onclick="scrollToSection('tun')"> Handeln</button>
+        <button onclick="scrollToSection('spiel')"> Spiel</button>
+    </nav>
 
-<section class="section hero-card fade-in">
-    <h1>Heißer Planet</h1>
-    <h2>Schrumpfende Rechte</h2>
-    <p class="subtitle">
-        Wie der Klimawandel Menschenrechte bedroht – einfach erklärt für Schüler.
-    </p>
-</section>
-
-
-<!-- KLIMA -->
-<section id="klima" class="section card slide-up">
-    <h2>🔥 Klimawandel & Menschenrechte</h2>
-    <p>
-        Der Klimawandel betrifft nicht nur die Umwelt, sondern auch grundlegende
-        Menschenrechte wie Wasser, Wohnen und Gesundheit.
-    </p>
-</section>
-
-<!-- WASSER -->
-<section id="wasser" class="section card slide-up image-text">
-    <img src="wasser.jpg" alt="Sauberes Trinkwasser">
-    <div>
-        <h2>💧 Recht auf Wasser</h2>
-        <p>
-            Durch Dürre und Hitze fehlt vielen Menschen sauberes Trinkwasser.
-            Wasser ist ein Menschenrecht.
+    <section class="section hero-card fade-in">
+        <h1>Heißer Planet</h1>
+        <h2>Schrumpfende Rechte</h2>
+        <p class="subtitle">
+            Wie der Klimawandel Menschenrechte bedroht.
         </p>
+    </section>
+
+
+    <!-- KLIMA -->
+    <section id="klima" class="section card slide-up">
+        <h2> Klimawandel & Menschenrechte</h2>
+        <p>
+            Unser Planet wird immer heißer – der Klimawandel sorgt für steigende Temperaturen und immer mehr Probleme.
+            Das betrifft nicht nur die Natur, sondern auch unser Leben, die Wirtschaft und die Politik in Europa.
+        </p>
+        <p> Auf dieser Webseite zeigen wir, was das für Menschenrechte bedeutet und was du selbst tun kannst, um etwas
+            zu verändern</p>
+    </section>
+
+    <!-- WASSER -->
+    <section id="wasser" class="section card slide-up image-text">
+        <img src="wasser.jpg" alt="Sauberes Trinkwasser">
+        <div>
+            <h2>Recht auf Wasser</h2>
+            <p>Sauberes Trinkwasser ist ein Menschenrecht.
+                Durch den Klimawandel gibt es in vielen Regionen:
+            </p>
+            <p>Sauberes Trinkwasser ist ein Menschenrecht. Viele Menschen haben nicht genug Wasser zum Leben.</p>
+            <ul>
+                <li>weniger Regen</li>
+                <li>längere Dürren</li>
+                <li>ausgetrocknete Flüsse</li>
+            </ul>
+            <p>Viele Menschen haben dadurch nicht genug Wasser zum Trinken, Kochen oder Waschen.</p>
+            <p>Beispiel:
+                In heißen Sommern sinkt der Wasserspiegel in Seen und Flüssen – auch in Europa.
+            </p>
+        </div>
+    </section>
+
+    <!-- WOHNEN -->
+    <section id="wohnen" class="section card slide-up image-text">
+        <img src="überschwimung.jpg" alt="Überschwemmtes Haus">
+        <div>
+            <h2>Recht auf Wohnen</h2>
+            <p>Jeder Mensch hat das Recht auf eine sichere Wohnung. Der Klimawandel gefährdet dieses Recht durch:</p>
+            <ul>
+                <li>Überschwemmungen</li>
+                <li>Stürme</li>
+                <li>extreme Hitze in Städten</li>
+            </ul>
+            <p>Häuser werden zerstört oder sind nicht mehr bewohnbar.</p>
+            <p>Beispiel: Bei starken Überschwemmungen verlieren Familien ihr Zuhause und müssen fliehen.</p>
+        </div>
+    </section>
+
+    <!-- GESUNDHEIT -->
+    <section id="gesundheit" class="section card slide-up image-text">
+        <img src="hitzewellen.jpg" alt="Hitzewelle">
+        <div>
+            <h2>Recht auf Gesundheit</h2>
+            <p>Der Klimawandel wirkt sich auch auf die Gesundheit aus:</p>
+            <ul>
+                <li>Hitzewellen</li>
+                <li>schlechte Luft</li>
+                <li>neue Krankheiten</li>
+            </ul>
+            <p>Besonders gefährdet sind Kinder, ältere Menschen und kranke Personen.</p>
+        </div>
+    </section>
+
+    <!-- TUN -->
+    <section id="tun" class="section card slide-up">
+        <h2>Was kannst du tun?</h2>
         <ul>
-            <li>weniger Regen</li>
-            <li>längere Dürren</li>
-            <li>ausgetrocknete Flüsse</li>
+            <li>kürzer duschen und Wasser sparen</li>
+            <li>Fahrrad oder Bus statt Auto nutzen</li>
+            <li>weniger Fast Fashion kaufen</li>
+            <li>andere über Klimawandel informieren</li>
+            <li>bei Schulprojekten oder Aktionen mitmachen</li>
         </ul>
-    </div>
-</section>
+        <p>Kleine Schritte machen einen Unterschied.</p>
+    </section>
 
-<!-- WOHNEN -->
-<section id="wohnen" class="section card slide-up image-text">
-    <img src="überschwimung.jpg" alt="Überschwemmtes Haus">
-    <div>
-        <h2>🏠 Recht auf Wohnen</h2>
-        <p>
-            Überschwemmungen, Stürme und Brände zerstören Häuser.
-            Viele Menschen verlieren dadurch ihr Zuhause.
-        </p>
-    </div>
-</section>
+    <!-- SPIEL -->
+    <section id="spiel" class="section center card slide-up">
+        <h2>🎮 Richtig oder Falsch</h2>
 
-<!-- GESUNDHEIT -->
-<section id="gesundheit" class="section card slide-up image-text">
-    <img src="hitzewellen.jpg" alt="Hitzewelle">
-    <div>
-        <h2>❤️ Recht auf Gesundheit</h2>
-        <p>
-            Hitze, Krankheiten und Luftverschmutzung gefährden die Gesundheit,
-            besonders Kinder und ältere Menschen.
-        </p>
-    </div>
-</section>
+        <select id="levelSelect">
+            <option value="leicht">Leicht</option>
+            <option value="mittel">Mittel</option>
+            <option value="schwer">Schwer</option>
+        </select>
 
-<!-- TUN -->
-<section id="tun" class="section card slide-up">
-    <h2>✊ Was kannst du tun?</h2>
-    <ul>
-        <li>🚲 Fahrrad statt Auto</li>
-        <li>💡 Strom & Wasser sparen</li>
-        <li>🥗 Lebensmittel nicht verschwenden</li>
-        <li>🗣️ Andere informieren</li>
-    </ul>
-</section>
+        <div class="game-box">
+            <p id="question">Klicke auf „Neue Runde“</p>
+            <p>⏱ Zeit: <span id="timer">10</span></p>
+            <p>⭐ Punkte: <span id="score">0</span></p>
+        </div>
 
-<!-- SPIEL -->
-<section id="spiel" class="section center card slide-up">
-    <h2>🎮 Richtig oder Falsch</h2>
+        <div class="button-group">
+            <button onclick="answer(true)">✔ Richtig</button>
+            <button onclick="answer(false)">❌ Falsch</button>
+        </div>
 
-    <select id="levelSelect">
-        <option value="leicht">Leicht</option>
-        <option value="mittel">Mittel</option>
-        <option value="schwer">Schwer</option>
-    </select>
+        <button onclick="startGame()">🔁 Neue Runde</button>
+    </section>
 
-    <div class="game-box">
-        <p id="question">Klicke auf „Neue Runde“</p>
-        <p>⏱ Zeit: <span id="timer">10</span></p>
-        <p>⭐ Punkte: <span id="score">0</span></p>
-    </div>
-
-    <div class="button-group">
-        <button onclick="answer(true)">✔ Richtig</button>
-        <button onclick="answer(false)">❌ Falsch</button>
-    </div>
-
-    <button onclick="startGame()">🔁 Neue Runde</button>
-</section>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
