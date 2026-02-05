@@ -7,17 +7,29 @@ let activeQuestions = [];
 const questions = {
     leicht: [
         { q: "Der Klimawandel bedroht Menschenrechte.", a: true },
-        { q: "Sauberes Wasser ist kein Menschenrecht.", a: false }
+        { q: "Sauberes Wasser ist ein Menschenrecht.", a: true },
+        { q: "Der Klimawandel hat nichts mit Menschen zu tun.", a: false }
     ],
+
     mittel: [
-        { q: "Hitze kann Krankheiten verstärken.", a: true },
-        { q: "Der Klimawandel betrifft nur Tiere.", a: false }
+        { q: "Hitze kann Krankheiten verschlimmern.", a: true },
+        { q: "Der Klimawandel betrifft nur Tiere.", a: false },
+        { q: "Überschwemmungen können Häuser zerstören.", a: true },
+        { q: "Saubere Luft gehört zu einem gesunden Leben.", a: true },
+        { q: "Klimawandel passiert nur in warmen Ländern.", a: false }
     ],
+
     schwer: [
-        { q: "Klimawandel kann Flucht auslösen.", a: true },
-        { q: "Menschenrechte haben nichts mit Umwelt zu tun.", a: false }
+        { q: "Klimawandel kann Menschen zur Flucht zwingen.", a: true },
+        { q: "Extreme Hitze betrifft besonders ältere Menschen.", a: true },
+        { q: "Menschenrechte haben nichts mit Umwelt zu tun.", a: false },
+        { q: "Dürren können zu Wassermangel führen.", a: true },
+        { q: "Der Klimawandel kann soziale Ungleichheit verstärken.", a: true },
+        { q: "Europa ist nicht vom Klimawandel betroffen.", a: false },
+        { q: "Der Schutz der Umwelt kann Menschenrechte stärken.", a: true }
     ]
 };
+
 
 // Theme
 function setTheme(color) {
